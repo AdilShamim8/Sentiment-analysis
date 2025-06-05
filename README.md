@@ -2,6 +2,10 @@
 
 In a digital age teeming with voices, understanding sentiment isn't just beneficial—it's essential. This project transforms raw text into meaningful insights, bridging the gap between human emotion and machine interpretation.
 
+![App Demonstration](OutPut.gif)
+
+Experience the seamless interaction and instant feedback provided by the application.
+
 ##  Project Overview
 
 This repository presents a streamlined approach to sentiment analysis, utilizing machine learning techniques to classify text data into positive, negative, or neutral sentiments. It's designed for clarity, efficiency, and adaptability.
@@ -56,11 +60,6 @@ Sentiment-analysis/
 * **Prediction**: The trained model predicts the sentiment of new, unseen text inputs.
 * **User Interface**: A Streamlit-based web app allows users to input text and receive sentiment predictions in real-time.
 
-##  Demonstration
-
-![App Demonstration](OutPut.gif)
-
-Experience the seamless interaction and instant feedback provided by the application.
 
 ##  Technologies Used
 
