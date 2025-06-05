@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-brain"></i> Sentiment Analysis</h1>
+            <p class="subtitle">Analyze the sentiment of your text using advanced AI</p>
+        </header>
+
+        <section class="input-section">
+            <textarea id="textInput" placeholder="Enter your text here..." rows="4"></textarea>
+            <button id="analyzeBtn" class="analyze-btn">
+                <i class="fas fa-magic"></i> Analyze Sentiment
+            </button>
+        </section>
+
+        <section id="resultSection" class="result-section" style="display: none;">
+            <div class="sentiment-result">
+                <h3><i class="fas fa-chart-bar"></i> Analysis Result</h3>
+                <div id="sentimentDisplay" class="sentiment-display">
+                    <i class="fas fa-spinner fa-spin"></i> Analyzing...
+                </div>
+            </div>
+            
+            <div class="debug-info">
+                <h3><i class="fas fa-code"></i> Debug Information</h3>
+                <div class="debug-content">
+                    <p><strong>Original Text:</strong></p>
+                    <p id="originalText"></p>
+                    <p><strong>Processed Text:</strong></p>
+                    <p id="processedText"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="examples-section">
+            <h3><i class="fas fa-lightbulb"></i> Try These Examples</h3>
+            <div class="example-buttons">
+                <button class="example-btn" data-text="I absolutely love this product! It's amazing and works perfectly.">
+                    <i class="fas fa-smile"></i> Positive
+                </button>
+                <button class="example-btn" data-text="This is the worst experience ever. I'm very disappointed.">
+                    <i class="fas fa-frown"></i> Negative
+                </button>
+                <button class="example-btn" data-text="The product arrived on time and seems to be working as expected.">
+                    <i class="fas fa-meh"></i> Neutral
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with <i class="fas fa-heart"></i> using Machine Learning</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
